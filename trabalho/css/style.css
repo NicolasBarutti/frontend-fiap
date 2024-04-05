@@ -1,0 +1,139 @@
+
+body{
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    background-size: 300%;
+    margin: 0;
+    padding: 0;
+    
+
+    
+}
+
+.conteiner{
+    margin: 50px ;
+    height: fit-content;
+    padding: auto ; 
+    display: flex;
+    justify-content: center;
+
+
+}    
+
+img{
+    width: 500px;
+}
+
+
+h1{
+    text-align: center;
+    font-size:35px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+
+}
+
+
+.paragrafo {
+    margin: auto;
+    width: 1800px;
+   
+}
+
+p{
+   
+   
+   font-size: 20px;
+   font-style: oblique;
+   text-align: left;
+   font-weight: 50px;
+   text-indent: 50px;
+   line-height: normal;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+   
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    height: 30px;
+    margin: 10px;
+    text-align: center;
+
+}
+
+
+a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    
+}
+
+.menu{
+    text-align: center;
+    
+}
+
+
+.linksPaginas{
+    padding: 20px;
+}
+
+.adm{
+    color: rgb(78, 99, 220);
+}
+
+.ads{
+    color: rgba(163, 105, 29, 0.374);
+}
+
+.engenharia{
+    color: rgba(175, 199, 94, 0.847);
+}
+
+.producao{
+    color: rgba(64, 90, 174, 0.916);
+}
+
+.mecatronica{
+    color: rgba(199, 195, 196, 0.916);
+}
+
+.dados{
+    color: rgba(79, 49, 115, 0.916);
+}
+
+.gestao{
+    color: rgb(147, 206, 206);
+}
+
+.jogos{
+    color: rgba(227, 240, 141, 0.916);
+}
+
+.informacao{
+    color: rgba(99, 211, 110, 0.584);
+}
+
+.internet{
+    color: rgba(117, 172, 227, 0.916);
+}
+
+.computadores{
+    color:  rgb(215, 215, 177);;
+}
+
+button{
+    background-color: white; 
+    border: solid white;
+    border-radius: 30px;
+    font-size: 20px;
+    margin: 10px;
+    text-decoration: none;
+}
