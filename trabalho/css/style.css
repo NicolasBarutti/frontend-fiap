@@ -67,6 +67,12 @@ h2{
 
 }
 
+ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+}
 
 a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
