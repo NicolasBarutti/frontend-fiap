@@ -113,7 +113,7 @@ a{
 }
 
 .jogos{
-    color: rgba(227, 240, 141, 0.916);
+    color: rgba(246, 248, 122, 0.916);
 }
 
 .informacao{
@@ -125,12 +125,12 @@ a{
 }
 
 .computadores{
-    color:  rgb(215, 215, 177);;
+    color:  rgb(112, 112, 81);;
 }
 
 button{
-    background-color: white; 
-    border: solid white;
+    background-color: rgb(26, 25, 25); 
+    border: solid rgb(7, 7, 7);
     border-radius: 30px;
     font-size: 20px;
     margin: 10px;
