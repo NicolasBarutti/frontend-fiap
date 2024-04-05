@@ -5,6 +5,8 @@ body{
 .imagens{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
     
     
@@ -20,8 +22,8 @@ img{
 
 
 button{
-    background-color: rgb(238, 238, 161); 
-    border: solid yellow;
+    background-color: rgb(130, 195, 214); 
+    border: solid rgb(55, 150, 167);
     border-radius: 30px;
     
 }

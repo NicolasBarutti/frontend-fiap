@@ -4,7 +4,6 @@ body{
     background-position: center center;
     height: 100vh;
     width: 100%;
-    background-size: 300%;
     margin: 0;
     padding: 0;
     
@@ -41,7 +40,7 @@ h1{
 
 .paragrafo {
     margin: auto;
-    width: 1800px;
+    width: 90%;
    
 }
 
