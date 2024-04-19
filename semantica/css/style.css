@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+main p, article p {
+    text-indent: 40px;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.header_page{
+    min-height: 80px;
+    background-color: royalblue;
+    padding: 20px;
+}
+
+.header_page h1{
+    text-align: center;
+    color: #fff;
+}
+.principal{
+    flex-grow: 1;
+    display: flex;
+    padding: 15px;
+    flex-wrap: wrap;
+
+}
+
+section{
+    width: 33%;
+}
+
+article, aside{
+    width:  50%;
+}
+
+article header h1{
+    text-align: center;
+    margin: 15px;
+}
+
+img{
+    display: block;
+    margin: auto;
+}
+figcaption{
+    text-align: center;
+    margin: 10px;
+}
+
+aside div{
+    width: 80%;
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: coral;
+    color: #fff;
+}
+
+.footer_page{
+    background-color: #000;
+    padding: 15px;
+    min-height: 50px;
+}
+
+
+.footer_page p{
+    text-align: center;
+    color: #fff;
+}
+nav{
+    background-color: blue;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center ;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px 25px;
+}
+
+nav ul li a:hover {
+    background-color: royalblue;
+}
+
