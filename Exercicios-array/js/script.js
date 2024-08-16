@@ -22,7 +22,6 @@ function reverterNomes() {
 
 function removerItem(){
     const nome = document.getElementById('nomeInput').value;
-    console.log(nome);
     nomes.splice(nomes.indexOf(nome), 1)
     console.log(nomes);
 
