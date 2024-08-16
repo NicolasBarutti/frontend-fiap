@@ -2,21 +2,29 @@ let nomes = [];
 
 function adicionarNome() {
     const nome = document.getElementById('nomeInput').value;
-    nomes.push(nome); // Adiciona o nome ao array
-    atualizarLista();
-    
+    nomes.push(nome);
+    console.log(nomes);
+    result.innerHTML = `${nomes}`
+
 }
+
 function ordenarNomes() {
-    nomes.sort(); // Ordena o array
-    atualizarLista();
+    nomes.sort();
+    result.innerHTML = `${nomes}`
+
 }
 
 function reverterNomes() {
-    nomes.reverse(); // Reverte a ordem do array
-    atualizarLista();
+    nomes.reverse();
+    result.innerHTML = `${nomes}`
+
 }
 
+function removerItem(){
+    const nome = document.getElementById('nomeInput').value;
+    console.log(nome);
+    nomes.splice(nomes.indexOf(nome), 1)
+    console.log(nomes);
 
-
-
-
+    result.innerHTML = `${nomes}`
+}
