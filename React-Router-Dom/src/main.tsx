@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider , Navigate} from 'react-router-dom'
 
 import GlobalStyle from './global-staled.ts'
 import EditarProdutos from './routes/EditarProdutos/index.tsx'
@@ -28,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: 'produtos/editar/:id',
         element: <EditarProdutos />
+      },
+      {
+        path: '/eletrodomesticos',
+        element: <Navigate to='/produtos'/>
       }
     ]
   }
