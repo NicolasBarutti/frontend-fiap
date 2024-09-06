@@ -1,0 +1,2 @@
+
+const globa_styled

@@ -12,3 +12,17 @@ export const DivComp2 = styled.div`
     }
 
 `
+export const DivComp1 = styled.div`
+border:2px solid lime;
+background-color: gray;
+padding: 15px;
+
+h2{
+    color: lime;
+}
+
+p{
+    color: white;
+    font-size: 1.3em;
+}
+`
