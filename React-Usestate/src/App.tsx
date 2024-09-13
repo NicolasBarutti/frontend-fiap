@@ -1,5 +1,8 @@
 import TesteState1 from "./components/TesteState1"
 import TesteState2 from "./components/TesteState2"
+import TesteState3 from "./components/TesteState3"
+import TesteState4 from "./components/TesteState4"
+import TesteState5 from "./components/TesteState5"
 
 
 function App() {
@@ -10,6 +13,9 @@ function App() {
       <h1>React- Hooks - useState</h1>
       <TesteState1/>
       <TesteState2/>
+      <TesteState3/>
+      <TesteState4/>
+      <TesteState5/>
     </>
   )
 }
