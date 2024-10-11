@@ -10,3 +10,16 @@ export async function GET(){
     return NextResponse.json(produtos);
 
 }
+
+export async function  POST(request:Request) {
+    
+    const file =  await fs.readFile(process.cwd() + '/src/data/base.json', 'utf-8')
+    const data = JSON.parse(file)
+    const{nome,preco,estoque} = await request.json()
+    const produto = {nome,preco,estoque} as TipoProduto
+    produto.id = Number(Date.now()) 
+    data.push(produto)
+    const json = JSON.stringify(data)
+    await fs.writeFile(process.cwd() + '/src/data/base.json', json)
+    return NextResponse.json(produto)
+}

@@ -1,11 +1,32 @@
+"use client"
+
 import { TipoProduto } from "@/types"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 export default function Produto({params}:{params:{id:number}}){
 
-    const [produto, setProduto] = useState<TipoProduto>(gi)
+    const [produto, setProduto] = useState<TipoProduto>()
+
+    useEffect(
+        ()=>{
+            const chamadaApi = async()=>{
+                const response = await fetch(`http://localhost:3000/api/base-produtos/${params.id}`)
+                const data = await response.json()
+                setProduto(data)
+                console.log(data);
+            }
+            chamadaApi()
+        }, [])
 
     return(
-        <main></main>
+        <main className="grow p-5">
+            <h2 className="text-3x1 text-center text-indigo-600 mb-4 font-bold">Produto</h2>
+            <div className="bg-indigo-300 w-48 p-2 m-auto noder border-indigo-950 rounded-md">
+                <p className="text-xl font-medium mb-1">Id: {produto?.id}</p>
+                <p className="text-xl font-medium mb-1">Nome: {produto?.nome}</p>
+                <p className="text-xl font-medium mb-1">Preço: {produto?.preco}</p>
+                <p className="text-xl font-medium mb-1">Estoque: {produto?.estoque}</p>
+            </div>
+        </main>
     )
 }
